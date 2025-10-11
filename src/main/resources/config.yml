@@ -1,0 +1,6 @@
+# Player will become partially invisible
+nearbyDistanceHorizontal: 8.0
+nearbyDistanceVertical: 8.0
+# Player will become completely invisible
+closeDistanceHorizontal: 4.0
+closeDistanceVertical: 4.0
