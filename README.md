@@ -7,6 +7,8 @@ running [Paper](https://papermc.io/software/paper) for Minecraft version `1.21.8
 
 Report bugs by [creating](https://github.com/TagiaNet/ProximityFade/issues/new) an issue.
 
+https://github.com/user-attachments/assets/0b617131-feba-4668-a97b-fc440f8c3798
+
 ## Configuration
 
 ### `config.yml`
