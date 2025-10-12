@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "net.tagia"
-version = "1.0"
+version = "1.0.0"
 description = "Hide players from each other based on proximity."
 paperPluginYaml {
     main = "net.tagia.proximityfade.ProximityFade"
