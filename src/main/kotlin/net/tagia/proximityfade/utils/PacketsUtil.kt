@@ -101,18 +101,4 @@ object PacketsUtil {
         )
     }
 
-//    fun foo(player: Player?): Boolean {
-//        if (plugin.eidToPlayer(e.user.entityId) == null)
-//            return false
-//
-//        val viewer = e.getPlayer<Player>()
-//        val targetEid = wrapper.entityId
-//
-//        val nearby = plugin.getNearbyEntityIds(viewer)!!
-//
-//        if (!nearby.contains(targetEid))
-//            return false
-//
-//        return true
-//    }
 }

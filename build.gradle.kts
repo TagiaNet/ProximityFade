@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "net.tagia"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 description = "Hide players from each other based on proximity."
 paperPluginYaml {
     main = "net.tagia.proximityfade.ProximityFade"
@@ -40,7 +40,6 @@ tasks.runServer {
         modrinth("FastAsyncWorldEdit", "2.13.1")
         modrinth("LuckPerms", "v5.5.0-bukkit")
         modrinth("AntiPopup", "12.1")
-//        url("https://github.com/retrooper/packetevents/releases/download/v2.9.5/packetevents-spigot-2.9.5.jar")
     }
 }
 
