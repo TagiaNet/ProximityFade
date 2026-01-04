@@ -12,7 +12,7 @@ version = "1.0.0"
 description = "Hide players from each other based on proximity."
 paperPluginYaml {
     main = "net.tagia.proximityfade.ProximityFade"
-    apiVersion = "1.21.8"
+    apiVersion = "1.21.11"
     website = "https://github.com/TagiaNet/ProximityFade"
 }
 
@@ -28,18 +28,17 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.10-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
     implementation("org.bstats:bstats-bukkit:3.0.2")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("com.github.retrooper:packetevents-spigot:2.9.5")
+    implementation("com.github.retrooper:packetevents-spigot:2.11.1")
 }
 
 tasks.runServer {
-    minecraftVersion("1.21.8")
+    minecraftVersion("1.21.11")
     downloadPlugins {
-        modrinth("FastAsyncWorldEdit", "2.13.1")
-        modrinth("LuckPerms", "v5.5.0-bukkit")
-        modrinth("AntiPopup", "12.1")
+        modrinth("FastAsyncWorldEdit", "2.14.3")
+        modrinth("LuckPerms", "v5.5.17-bukkit")
     }
 }
 
