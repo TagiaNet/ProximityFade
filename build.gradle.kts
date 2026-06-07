@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "2.1.20"
-    id("com.gradleup.shadow") version "8.3.0"
+    kotlin("jvm") version "2.3.21"
+    id("com.gradleup.shadow") version "9.4.1"
     // Development server run tasks
     id("xyz.jpenilla.run-paper") version "2.3.1"
     // Generate plugin resources at build time
@@ -8,11 +8,11 @@ plugins {
 }
 
 group = "net.tagia"
-version = "1.0.1"
+version = "1.0.2"
 description = "Hide players from each other based on proximity."
 paperPluginYaml {
     main = "net.tagia.proximityfade.ProximityFade"
-    apiVersion = "1.21.11"
+    apiVersion = "26.1.2"
     website = "https://github.com/TagiaNet/ProximityFade"
 }
 
@@ -28,21 +28,21 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:26.1.2.build.53-stable")
     implementation("org.bstats:bstats-bukkit:3.0.2")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("com.github.retrooper:packetevents-spigot:2.11.1")
+    implementation("com.github.retrooper:packetevents-spigot:2.12.2")
 }
 
 tasks.runServer {
-    minecraftVersion("1.21.11")
+    minecraftVersion("26.1.2")
     downloadPlugins {
-        modrinth("FastAsyncWorldEdit", "2.14.3")
-        modrinth("LuckPerms", "v5.5.17-bukkit")
+//        modrinth("FastAsyncWorldEdit", "2.14.3")
+//        modrinth("LuckPerms", "v5.5.17-bukkit")
     }
 }
 
-val targetJavaVersion = 21
+val targetJavaVersion = 25
 kotlin {
     jvmToolchain(targetJavaVersion)
 }
